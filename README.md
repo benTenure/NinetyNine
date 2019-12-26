@@ -9,3 +9,6 @@ The purpose of this project is to make a simple muliplayer game so that I can ga
    -  Connect to other players in the same region
    -  See changes on the board with minimal latency (we'll see how much control I have over that)
    -  See how much of the logic I can really take care of on the frontend
+
+## Design Document:
+Permanent link to current design document: [click here](https://docs.google.com/document/d/1N1ErHEGDJsYSt9yeBB3hXNj-sHw3WbpyWAXFDFjGx1w/edit?usp=sharing)
