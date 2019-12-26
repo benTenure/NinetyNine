@@ -2,9 +2,9 @@
 using Photon.Pun;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.UI;
 
-// ReSharper disable once CheckNamespace
 public class PlayerNameInput : MonoBehaviour
 {
     [SerializeField] private TMP_InputField nameInputField = null;
@@ -14,12 +14,13 @@ public class PlayerNameInput : MonoBehaviour
 
     private void Start()
     {
+        nameInputField.onValueChanged.AddListener(delegate { SetPlayerName(nameInputField.text); });
         SetUpInputField();
     }
 
     private void SetUpInputField()
     {
-        if (!PlayerPrefs.HasKey(PLAYER_PREFS_NAME_KEY)) return;
+        if (!PlayerPrefs.HasKey(PLAYER_PREFS_NAME_KEY)) { return; }
 
         string defaultName = PlayerPrefs.GetString(PLAYER_PREFS_NAME_KEY);
 
@@ -27,9 +28,9 @@ public class PlayerNameInput : MonoBehaviour
         SetPlayerName(defaultName);
     }
 
-    public void SetPlayerName(string name)
+    public void SetPlayerName(string nickname)
     {
-        continueButton.interactable = !string.IsNullOrEmpty(name);
+        continueButton.interactable = !string.IsNullOrEmpty(nickname);
     }
 
     public void SavePlayerName()

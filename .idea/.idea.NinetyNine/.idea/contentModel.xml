@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\benmo\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -343,6 +343,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Mechanics" t="Include">
+            <e p="Card.cs" t="Include" />
+            <e p="CardManager.cs" t="Include" />
+          </e>
           <e p="Menus" t="Include">
             <e p="MainMenu.cs" t="Include" />
             <e p="PlayerNameInput.cs" t="Include" />
