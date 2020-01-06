@@ -1,7 +1,7 @@
 # NinetyNine
 
 ## Goals:
-The purpose of this project is to make a simple muliplayer game so that I can gain some experience with networking. Many games today have multiplayer aspects to them so it only makes sense that I do something that falls into that category as well.
+The purpose of this project is to make a simple multiplayer game so that I can gain some experience with networking. Many games today have multiplayer aspects to them so it only makes sense that I do something that falls into that category as well.
 
 -  The actual game is 'Ninety Nine', a simple card game that my dad is **very** enthusiastic about it.
 -  By doing this with a card game I won't have to worry too much about latency
